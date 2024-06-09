@@ -135,16 +135,16 @@
         } elseif ($value == 3) {
             return '#EE4E4E';
         } else {
-            return '#FFFFFF'; // Color por defecto si no se encuentra el valor
+            return '#FFFFFF'; 
         }
     }
 
     function getTextColor($value)
     {
         if ($value == 3) {
-            return '#FFFFFF'; // Si es NULA, el texto será blanco
+            return '#FFFFFF'; 
         } else {
-            return '#799351'; // Para los demás valores
+            return '#799351'; 
         }
     }
 @endphp
