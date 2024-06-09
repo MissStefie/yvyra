@@ -52,7 +52,15 @@
                 <p><strong>Descripción:</strong> {{ $tree->Descripcion }}</p>
                 <p><strong>Principales Usos:</strong> {{ $tree->Principales_Usos }}</p>
 
-                <p><strong>PERIODO DE FLORACION:</strong></p>
+                <p>
+                    <strong>PERIODO DE FLORACIÓN:</strong>
+                    <span class="info-icon" data-toggle="tooltip" data-placement="top" title="Información adicional">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </span>
+                </p>
+                <div class="additional-info" style="display: none;">
+                    <p style="color: #6B8A7A;">Los bloques en tonos claros son los meses de floración.</p>
+                </div>
                 <div class="months-container">
                     @foreach (['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'] as $month)
                         <div class="month-square"
@@ -61,7 +69,15 @@
                     @endforeach
                 </div>
 
-                <p><strong>PERIODO DE FRUTACION:</strong></p>
+                <p>
+                    <strong>PERIODO DE FRUTACIÓN:</strong>
+                    <span class="info-icon" data-toggle="tooltip" data-placement="top" title="Información adicional">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </span>
+                </p>
+                <div class="additional-info" style="display: none;">
+                    <p style="color: #6B8A7A;">Los bloques en tonos claros son los meses de frutación.</p>
+                </div>
                 <div class="months-container">
                     @foreach (['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'] as $month)
                         <div class="month-square"
@@ -70,7 +86,15 @@
                     @endforeach
                 </div>
 
-                <p><strong>PRESENCIA EN LAS RESERVAS DE ITAIPU:</strong></p>
+                <p><strong>PRESENCIA EN LAS RESERVAS DE ITAIPU:</strong><span class="info-icon" data-toggle="tooltip"
+                        data-placement="top" title="Información adicional">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </span>
+                </p>
+                <div class="additional-info" style="display: none;">
+                    <p style="color: #6B8A7A;">Abreviaturas empleadas: Centro Ambiental (CA), Tati Yupi (TY), Pikyry (PIK),
+                        Itabo (ITA), Yvyty Rokai (YR), Limoy (LIM), Pozuelo (POZ), Carapa (CAR) y Mbaracayu (MBA).</p>
+                </div>
                 <div class="reserve-container">
                     @foreach (['CA', 'TY', 'PIK', 'ITA', 'YR', 'LIM', 'POZ', 'CAR', 'MBA'] as $reserve)
                         <div class="reserve-square" style="background-color: {{ getColor($tree->{$reserve}) }};">
@@ -124,6 +148,22 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            // Inicializa el tooltip de Bootstrap
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Maneja el clic en el icono de información
+            $('.info-icon').click(function() {
+                // Encuentra el contenedor del contenido adicional más cercano
+                var additionalInfo = $(this).closest('p').next('.additional-info');
+
+                // Alternar la visibilidad del contenido adicional
+                additionalInfo.toggle();
+            });
+        });
+    </script>
+
 @endsection
 @php
     function getColor($value)
@@ -135,16 +175,16 @@
         } elseif ($value == 3) {
             return '#EE4E4E';
         } else {
-            return '#FFFFFF'; 
+            return '#FFFFFF';
         }
     }
 
     function getTextColor($value)
     {
         if ($value == 3) {
-            return '#FFFFFF'; 
+            return '#FFFFFF';
         } else {
-            return '#799351'; 
+            return '#799351';
         }
     }
 @endphp
