@@ -88,34 +88,35 @@
                     @endforeach
                 </div>
                 <p><strong>PRESENCIA EN LOS DEPARTAMENTOS DEL PARAGUAY:</strong></p>
-                <div class="department-container">
-                    @foreach ([
-            'Alto_Paraguay' => 'Alto Paraguay',
-            'Alto_Parana' => 'Alto Paraná',
-            'Amambay' => 'Amambay',
-            'Boqueron' => 'Boquerón',
-            'Caaguazu' => 'Caaguazú',
-            'Caazapa' => 'Caazapá',
-            'Canindeyu' => 'Canindeyú',
-            'Central' => 'Central',
-            'Concepcion' => 'Concepción',
-            'Cordillera' => 'Cordillera',
-            'Guaira' => 'Guairá',
-            'Itapua' => 'Itapúa',
-            'Misiones' => 'Misiones',
-            'Neembucu' => 'Ñeembucú',
-            'Paraguari' => 'Paraguarí',
-            'Presidente_Hayes' => 'Presidente Hayes',
-            'San_Pedro' => 'San Pedro',
-        ] as $department => $department_name)
-                        <p style="color: {{ $tree->{$department} == 1 ? '#6B8A7A' : '#BEBEBE' }};">{{ $department_name }}
-                        </p>
-                    @endforeach
-
+                <div class="paraguay-map">
+                    <div><img src="{{ asset('img/PY_MAPA.jpg') }}" alt="Mapa de Paraguay" style="width: 100%;">
+                        @foreach ([
+            'Alto_Paraguay' => 'dot-1',
+            'Boqueron' => 'dot-2',
+            'Presidente_Hayes' => 'dot-3',
+            'Concepcion' => 'dot-4',
+            'Amambay' => 'dot-5',
+            'Canindeyu' => 'dot-6',
+            'San_Pedro' => 'dot-7',
+            'Alto_Parana' => 'dot-8',
+            'Caaguazu' => 'dot-9',
+            'Cordillera' => 'dot-10',
+            'Central' => 'dot-11',
+            'Paraguari' => 'dot-12',
+            'Guaira' => 'dot-13',
+            'Neembucu' => 'dot-14',
+            'Misiones' => 'dot-15',
+            'Caazapa' => 'dot-16',
+            'Itapua' => 'dot-17',
+        ] as $department => $dot_class)
+                            @if ($tree->{$department} == 1)
+                                <div class="{{ $dot_class }}"></div>
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
-
-
             </div>
+
             <div class="mdl-card__actions mdl-card--border">
                 <a href="{{ route('trees.index') }}"
                     class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"

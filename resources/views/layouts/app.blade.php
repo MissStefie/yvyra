@@ -26,6 +26,233 @@
             width: 100%;
         }
 
+        .paraguay-map {
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .dot-1 {
+            position: absolute;
+            top: 17%;
+            /*sobre eje y*/
+            left: 43%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-2 {
+            position: absolute;
+            top: 33%;
+            /*sobre eje y*/
+            left: 22%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-3 {
+            position: absolute;
+            top: 52%;
+            /*sobre eje y*/
+            left: 48%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-4 {
+            position: absolute;
+            top: 43%;
+            /*sobre eje y*/
+            left: 63%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-5 {
+            position: absolute;
+            top: 43%;
+            /*sobre eje y*/
+            left: 77.5%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-6 {
+            position: absolute;
+            top: 60%;
+            /*sobre eje y*/
+            left: 85%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-7 {
+            position: absolute;
+            top: 60%;
+            /*sobre eje y*/
+            left: 70%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-8 {
+            position: absolute;
+            top: 67%;
+            /*sobre eje y*/
+            left: 86%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-9 {
+            position: absolute;
+            top: 70%;
+            /*sobre eje y*/
+            left: 78%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-10 {
+            position: absolute;
+            top: 73%;
+            /*sobre eje y*/
+            left: 67%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-11 {
+            position: absolute;
+            top: 75%;
+            /*sobre eje y*/
+            left: 60.5%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-12 {
+            position: absolute;
+            top: 79%;
+            /*sobre eje y*/
+            left: 65%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-13 {
+            position: absolute;
+            top: 78.5%;
+            /*sobre eje y*/
+            left: 73%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-14 {
+            position: absolute;
+            top: 87%;
+            /*sobre eje y*/
+            left: 55%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-15 {
+            position: absolute;
+            top: 90%;
+            /*sobre eje y*/
+            left: 65%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-16 {
+            position: absolute;
+            top: 80%;
+            /*sobre eje y*/
+            left: 79%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
+        .dot-17 {
+            position: absolute;
+            top: 90%;
+            /*sobre eje y*/
+            left: 80%;
+            /*sobre eje x*/
+            width: 10px;
+            height: 10px;
+            background-color: #A1DD70;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgba(161, 221, 112, 0.7);
+        }
+
         .months-container {
             justify-content: center;
             display: flex;
@@ -65,7 +292,6 @@
             font-size: 12px;
         }
 
-        /* Estilos para los cards */
         .page-content {
             padding: 20px;
         }
@@ -145,7 +371,6 @@
         @media (max-width: 1200px) {
             .mdl-card {
                 width: 30%;
-                /* 3 columnas en pantallas medianas */
             }
         }
 
@@ -157,12 +382,10 @@
 
             .mdl-card {
                 width: 100%;
-                /* 1 columna en pantallas pequeñas */
                 margin-bottom: 20px;
             }
         }
 
-        /* Estilos específicos para centrar el card en show.blade.php */
         .center-card-container {
             display: flex;
             justify-content: center;
@@ -187,27 +410,7 @@
 
             .month-square {
                 width: calc(25% - 10px);
-                /* 25% para que haya 4 divs por fila */
                 margin-bottom: 10px;
-                /* Espacio entre filas */
-            }
-        }
-
-        .department-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            text-align: center;
-        }
-
-        .department-container p {
-            width: calc(30% - 20px);
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .department-container p {
-                font-size: 10px;
             }
         }
     </style>
@@ -232,4 +435,3 @@
 </body>
 
 </html>
-
