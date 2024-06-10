@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+    <link rel="shortcut icon" href="{{ asset('img/favicon.jpg') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -462,6 +463,8 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
+                <img src="{{ asset('img/favicon.jpg') }}" alt="Logo"
+                    style="width: 50px; height: auto; margin-right: 10px; border-radius: 50%;">
                 <span class="mdl-layout-title">Ñande Yvyra</span>
             </div>
         </header>

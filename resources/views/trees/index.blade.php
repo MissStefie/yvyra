@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Buscar por familia, nombre científico o nombre común"
+        <input type="text" id="searchInput" placeholder="Buscar..."
             onkeyup="searchTrees()">
         <i class="bi bi-search"></i>
     </div>
