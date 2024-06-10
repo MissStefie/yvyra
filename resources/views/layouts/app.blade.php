@@ -450,6 +450,11 @@
                 margin-bottom: 10px;
             }
         }
+
+        body {
+            background-image: url('{{ asset('img/tree-pattern.jpg') }}');
+            background-repeat: repeat;
+        }
     </style>
 </head>
 
