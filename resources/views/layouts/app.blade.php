@@ -26,6 +26,43 @@
             width: 100%;
         }
 
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            /* Agrega margen inferior para separarlo de los cards */
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            /* Ajusta el ancho del input según tus preferencias */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #6B8A7A;
+            /* Cambia el color del borde al enfocar */
+        }
+
+        .search-container i {
+            font-size: 20px;
+            margin-left: -30px;
+            /* Ajusta el espacio entre el icono y el input */
+            color: #6B8A7A;
+            /* Cambia el color del icono */
+            cursor: pointer;
+        }
+
+        .search-container i:hover {
+            color: #254336;
+            /* Cambia el color del icono al pasar el mouse */
+        }
+
         .paraguay-map {
             position: relative;
             width: 60%;
